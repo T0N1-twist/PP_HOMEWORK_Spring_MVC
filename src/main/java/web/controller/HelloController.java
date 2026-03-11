@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 @Controller
@@ -18,7 +19,7 @@ public class HelloController {
 		messages.add("I'm Spring MVC application");
 		messages.add("5.2.0 version by sep'19 ");
 		model.addAttribute("messages", messages);
-		return "index";
+		return "cars";
 	}
 	
 }
