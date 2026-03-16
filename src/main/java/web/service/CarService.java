@@ -8,5 +8,4 @@ public interface CarService {
 
     public List<Car> getCarsLimited(int count);
 
-    public List<Car>  getAllCars();
 }

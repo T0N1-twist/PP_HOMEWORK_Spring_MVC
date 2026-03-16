@@ -17,17 +17,14 @@ public class CarServiceImpl implements CarService{
     }
 
     public List<Car> getCarsLimited(int count) {
+        if (count == null || count <= 0) {
+            return new ArrayList<>(cars);
+        }
+
         int limit = Math.min(count, cars.size());
-            if (limit <= 0) {
-                limit = cars.size();
-            }
         return new ArrayList<>(cars.subList(0, limit));
     }
 
-
-    public List<Car> getAllCars() {
-        return new ArrayList<>(cars);
-    }
 
 
 }
