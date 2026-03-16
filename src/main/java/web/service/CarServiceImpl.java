@@ -16,7 +16,7 @@ public class CarServiceImpl implements CarService{
         cars.add(new Car("BMW", "blue", 2022));
     }
 
-    public List<Car> getCarsLimited(int count) {
+    public List<Car> getCarsLimited(Integer count) {
         if (count == null || count <= 0) {
             return new ArrayList<>(cars);
         }
